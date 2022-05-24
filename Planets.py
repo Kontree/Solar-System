@@ -4,16 +4,17 @@ import math as mt
 
 
 class Planet:
-    def __init__(self, x, y, radius, color, mass):
+    def __init__(self, x, y, radius, color, mass, name='', yVel=0, xVel=0):
         self.pos = self.x, self.y = x, y
         self.radius = radius
         self.color = color
         self.mass = mass
         self.isSun = False
-        self.xVel = 0
-        self.yVel = 0
+        self.xVel = xVel
+        self.yVel = yVel
         self.distanceToStar = 0
         self.orbit = []
+        self.name = name
 
     def draw(self, window):
         x = self.x * Gl.SCALE + Gl.WIDTH / 2
