@@ -17,7 +17,10 @@ BLUE = (0, 191, 255)
 RED = (188, 39, 50)
 DARK_GREY = (80, 80, 80)
 WHITE = (255, 255, 255)
-
+NEUTRAL = (132, 106, 224)
 # Text settings
 pg.init()
 FONT = pg.font.SysFont('comicsans', 16)
+
+# System settings
+planets = []
